@@ -1,0 +1,111 @@
+DB : HospitalInventory 
+
+Collection : hospital
+var schemaHospital = db.hospital.findOne();
+> for(var cols in schemaHospital){print(cols);}
+_id
+hId
+name
+location
+address
+contactNo
+ db.hospital.find().pretty()
+{
+        "_id" : ObjectId("5f7850b25cb89e4c90fdc8e8"),
+        "hId" : "H1",
+        "name" : "Appolo",
+        "location" : "17.398644, 78.484334",
+        "address" : "Plot No. 3-5-874/1 Near, Old MLA Quarters Rd, Hyderguda,Hyderabad,Telangana 500029",
+        "contactNo" : "040-23231380"
+}
+{
+        "_id" : ObjectId("5f77cf60bea3a0987d2aadd2"),
+        "hId" : "H2",
+        "name" : "Oxygen",
+        "location" : "16.3256656,75.2564865",
+        "address" : "Plot No. 4-7-741/1 Near, Anandbagh,Hyderabad,Telangana 500056",
+        "contactNo" : "040-23206897"
+}
+{
+        "_id" : ObjectId("5f784478a617b61e44f63f2a"),
+        "hId" : "H3",
+        "name" : "KIMS",
+        "location" : "21.3256656,79.2564865",
+        "address" : "Plot No. 4-7-235/9,MG Road, Kharman Ghat,Hyderabad,Telangana 500033",
+        "contactNo" : "040-20303896"
+}
+
+
+Collection : Ventilators
+> var schemaVentilators = db.Ventilators.findOne();
+> for(var cols in schemaVentilators){print(cols);}
+_id
+hId
+ventilatorId
+status
+name
+
+db.Ventilators.find().pretty()
+{
+        "_id" : ObjectId("5f77d13ebea3a0987d2aadd3"),
+        "hId" : "H1",
+        "ventilatorId" : "H1V1",
+        "status" : "occupied",
+        "name" : "Appolo"
+}
+{
+        "_id" : ObjectId("5f77d176bea3a0987d2aadd4"),
+        "hId" : "H2",
+        "ventilatorId" : "H2V5",
+        "status" : "available",
+        "name" : "Oxygen"
+}
+{
+        "_id" : ObjectId("5f77d18fbea3a0987d2aadd5"),
+        "hId" : "H2",
+        "ventilatorId" : "H2V1",
+        "status" : "occupied",
+        "name" : "Oxygen"
+}
+{
+        "_id" : ObjectId("5f77d1a1bea3a0987d2aadd6"),
+        "hId" : "H1",
+        "ventilatorId" : "H1V3",
+        "status" : "occupied",
+        "name" : "Appolo"
+}
+{
+        "_id" : ObjectId("5f783f8528df4c02d8127bd6"),
+        "hId" : "H1",
+        "ventilatorId" : "H1V4",
+        "status" : "available",
+        "name" : "Appolo"
+}
+{
+        "_id" : ObjectId("5f7843dea617b61e44f63f29"),
+        "hId" : "H2",
+        "ventilatorId" : "H2V4",
+        "status" : "occupied",
+        "name" : "Oxygen"
+}
+{
+        "_id" : ObjectId("5f7844d9a617b61e44f63f2b"),
+        "hId" : "H3",
+        "ventilatorId" : "H3V1",
+        "status" : "available",
+        "name" : "KIMS"
+}
+{
+        "_id" : ObjectId("5f7844e8a617b61e44f63f2c"),
+        "hId" : "H3",
+        "ventilatorId" : "H3V2",
+        "status" : "occupied",
+        "name" : "KIMS"
+}
+{
+        "_id" : ObjectId("5f784d728732fb0150349290"),
+        "hId" : "H5",
+        "ventilatorId" : "H5V5",
+        "status" : "available",
+        "name" : "Oxygen"
+}
